@@ -169,32 +169,6 @@ document.querySelectorAll('.btn').forEach(button => {
     });
 });
 
-// Add styles for ripple effect dynamically
-const style = document.createElement('style');
-style.textContent = `
-    .btn {
-        position: relative;
-        overflow: hidden;
-    }
-    
-    .ripple {
-        position: absolute;
-        border-radius: 50%;
-        background: rgba(255, 255, 255, 0.6);
-        transform: scale(0);
-        animation: ripple-animation 0.6s ease-out;
-        pointer-events: none;
-    }
-    
-    @keyframes ripple-animation {
-        to {
-            transform: scale(4);
-            opacity: 0;
-        }
-    }
-`;
-document.head.appendChild(style);
-
 // Console welcome message
 console.log('%c Welcome to ModernPage! ', 'background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; font-size: 20px; padding: 10px; border-radius: 5px;');
 console.log('%c Built with Bootstrap 5 and modern web technologies. ', 'color: #667eea; font-size: 14px;');
